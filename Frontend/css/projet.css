@@ -1,0 +1,142 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img.backLogo{
+  width:100%;
+  position: absolute;
+}
+
+body{
+  background-image: url("blanc.jpg");
+  background-size: cover;
+  background-attachment: local;
+}
+
+.box{
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*  -- box1 -- */
+
+div.box1 {
+
+  width: 30%;
+
+  border-radius: 0px;
+
+  padding: 7px 7px 7px 7px;
+  color: white;
+  background-image: url("bienetre.jpg");
+  background-size: cover;
+  background-color: grey;
+
+  opacity: 0.9;
+  height: 150px;
+
+}
+
+.box1 p{
+  color: white;
+  font-family: inherit;
+  font-size: 20px;
+
+}
+
+.box1 h1{
+  font-family: inherit;
+  color: white;
+  font-size: 30px;
+}
+
+div.box1 a{
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+}
+
+
+
+/* -- box2 -- */
+
+
+div.box2 {
+
+  width: 30%;
+
+  border-radius: 0px;
+
+  padding: 7px 7px 7px 7px;
+  color: white;
+  background-image: url("sport.jpg");
+  background-size: cover;
+  background-color: grey;
+
+  opacity: 0.9;
+  height: 150px;
+
+}
+
+.box2 p{
+  color: white;
+  font-family: inherit;
+  font-size: 20px;
+
+}
+
+.box1 h1{
+  font-family: inherit;
+  color: white;
+  font-size: 30px;
+}
+
+div.box2 a{
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+}
+
+
+
+/* -- box3 -- */
+
+div.box3 {
+
+  width: 30%;
+
+  border-radius: 0px;
+
+  padding: 7px 7px 7px 7px;
+  color: white;
+  background-image: url("nutri.jpg");
+  background-size: cover;
+  background-color: grey;
+
+  opacity: 0.9;
+  height: 150px;
+
+}
+
+.box3 p{
+  color: white;
+  font-family: inherit;
+  font-size: 20px;
+
+}
+
+.box3 h1{
+  font-family: inherit;
+  color: white;
+  font-size: 30px;
+}
+
+div.box3 a{
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+}
