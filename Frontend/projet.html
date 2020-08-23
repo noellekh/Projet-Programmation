@@ -1,263 +1,367 @@
+
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
     <title>FULL PATATE</title>
-    <link rel="stylesheet" href="FP.css" type="text/css">
+    <link rel="stylesheet" href="FP.css" type"text/css">
     <script type="text/javascript" src="./FP.js"></script>
+    <script type="text/javascript" src="./CalculCal.js"></script>
+    <script type="text/javascript" src="./ChoixSport.js"></script>
 
 
-</head>
-<body onload="start('acceuil');" id="body" class="body">
+  </head>
+  <body onload="start('acceuil');" id="body" class="body">
 
-  <!-- acceuil-->
-
-
-  <div id="acceuil">
+    <!-- acceuil-->
+    <div id="acceuil">
 
 
+      <header>
+        <nav class="titreFP">
+          <div class="logo">
+            <h1><a onclick="hide('acceuil')">FULL PATATE always</a></h1>
+          </div>
 
-    <header>
-      <nav class="titreFP">
-        <div class="logo">
-          <h1><a onclick="hide('acceuil')">FULL PATATE always</a></h1>
-        </div>
+          <div class="banniere">
+            <ul id="menu">
+              <li><a onclick ='hide("contacts")'>Contacts</a></li>
+              <li><a onclick='hide("bout_moi")'>MOI</a></li>
+            </ul>
+          </div>
 
-        <div class="banniere">
-          <ul>
-            <li><a onclick ='hide("contacts")'>Contacts</a></li>
-            <li><a onclick='hide("bout_moi")'>MOI</a></li>
-          </ul>
-        </div>
+        </nav>
+      </header>
 
-      </nav>
-    </header>
+      <div class="citations">
+        <ul id="defiler">
 
-    <div class="citations">
-      <ul id="defiler">
+          <li>
+            <img src="./citations-full-patate/2.png">
+          </li>
 
-        <li>
-          <img src="./citations-full-patate/2.png">
-        </li>
+          <li>
+            <img src="./citations-full-patate/1.png">
+          </li>
 
-        <li>
-          <img src="./citations-full-patate/1.png">
-        </li>
+          <li>
+            <img src="./citations-full-patate/3.png">
+          </li>
 
-        <li>
-          <img src="./citations-full-patate/3.png">
-        </li>
+          <li>
+            <img src="./citations-full-patate/4.png">
+          </li>
 
-        <li>
-          <img src="./citations-full-patate/4.png">
-        </li>
-
-        <li>
-          <img src="./citations-full-patate/5.png">
-        </li>
-
-        <li>
-          <img src="./citations-full-patate/6.png">
-        </li>
-
-      </ul>
-    </div>
-
-
-      <img>
-
-
-    <div class="box">
-
-    <div class="box1">
-      <h1><a onclick='hide("bienEtre")'>Bien être</a></h1>
-         <p>Découvrez les astuces et conseils pour être</br>
-           bien dans sa tête et dans son corps</p>
-    </div>
-
-    <div class="box2">
-      <h1><a onclick='hide("sport")'>Sport</a></h1>
-        <p> Des séances de sport pour tous les niveaux</p>
-    </div>
-
-    <div class="box3">
-      <h1><a onclick='hide("nutrition")'>Nutrition</a></h1>
-        <p>Des recettes gourmandes pour une alimentation</br>
-          saine et équilibrée</p>
-    </div>
-    </div>
+          <li>
+            <img src="./citations-full-patate/5.png">
+          </li>
 
 
 
-  </div>
+        </ul>
+      </div>
 
-  <!--Formulaire Moi-->
+      <div class="box">
 
+      <div class="box1">
+        <h1><a onclick='hide("bienEtre")'>Bien être</a></h1>
+           <p>Découvrez les astuces et conseils pour être</br>
+             bien dans sa tête et dans son corps</p>
+      </div>
 
+      <div class="box2">
+        <h1><a onclick='hide("sport")'>Sport</a></h1>
+          <p> Des séances de sport pour tous les niveaux</p>
+      </div>
 
-
-  <div id="bout_moi">
-
-    <header>
-      <nav class="titreFP">
-        <div class="logo">
-          <h1><a onclick="hide('acceuil')">FULL PATATE always</a></h1>
-        </div>
-
-        <div class="banniere">
-          <ul>
-            <li><a onclick ='hide("contacts")'>Contacts</a></li>
-            <li><a onclick='hide("bout_moi")'>MOI</a></li>
-          </ul>
-        </div>
-
-      </nav>
-    </header>
-
-    <div id="formulaire" class="formulaire">
-      <form class="moiForm" name="En savoir plus sur sois-même" action="#" method="post">
-        <p> Vous voulez en savoir plus sur votre apport calorique ? </br>
-            Remplissez le formulaire ci-dessous:</p>
-
-          <div class="remplir">
-
-          <p>Votre prénom: </p>
-              <input type="text" name="prenom" id="prenom">
-
-          <p>Votre âge: </p>
-              <input type="text" name="age" id="age">
-
-          <p>Votre sexe: </p>
-               <input type="radio" name="sexe" id="f" value="femme">
-               <label for="femme">Femme</label>
-
-                <input type="radio" name="sexe" id="m" value="homme">
-                <label for="homme">Homme</label>
-
-          <p>Votre poids (kg): </p>
-                <input type="text" name="poids" id="poids">
-
-          <p>Votre taille en cm: </p>
-                <input type="text" name="taille" value="taille">
-
-          <p>Vous êtes plutôt; </p>
-             <select class="activite" id="activ" name="act">
-                  <option value="tresActif">Très actif</option>
-                  <option value="actif" selected>Actif</option>
-                  <option value="activitéMod">Activité modérée</option>
-                  <option value="pasActif">Pas actif</option>
-              </select><br>
-
-            <input type="submit" class="SubForm" name="bouton" value="Soumettre">
+      <div class="box3">
+        <h1><a onclick='hide("nutrition")'>Nutrition</a></h1>
+          <p>Des recettes gourmandes pour une alimentation</br>
+            saine et équilibrée</p>
+      </div>
+      </div>
 
 
     </div>
-  </div>
-
-
-<!--ContactS-->
-
-  <div id="contacts">
-
-    <header>
-      <nav class="titreFP">
-        <div class="logo">
-          <h1><a onclick="hide('acceuil')">FULL PATATE always</a></h1>
-        </div>
-
-        <div class="banniere">
-          <ul>
-            <li><a onclick ='hide("contacts")'>Contacts</a></li>
-            <li><a onclick='hide("bout_moi")'>MOI</a></li>
-          </ul>
-        </div>
-
-      </nav>
-    </header>
-
-    <div class="essaye">
-      <p>hohohihoho</p>
-
-
-  </div>
-
-
-<!--Page Nutrition-->
-
-  <div id="nutrition">
-
-    <header>
-      <nav class="titreFP">
-        <div class="logo">
-          <h1><a onclick="hide('acceuil')">FULL PATATE always</a></h1>
-        </div>
-
-        <div class="banniere">
-          <ul>
-            <li><a onclick ='hide("contacts")'>Contacts</a></li>
-            <li><a onclick='hide("bout_moi")'>MOI</a></li>
-          </ul>
-        </div>
-
-      </nav>
-    </header>
-
-
-    <h1>HELLO</h1>
-  </div>
-
-<!--Page sport-->
-
-  <div id="sport">
-
-    <header>
-      <nav class="titreFP">
-        <div class="logo">
-          <h1><a onclick="hide('acceuil')">FULL PATATE always</a></h1>
-        </div>
-
-        <div class="banniere">
-          <ul>
-            <li><a onclick ='hide("contacts")'>Contacts</a></li>
-            <li><a onclick='hide("bout_moi")'>MOI</a></li>
-          </ul>
-        </div>
-
-      </nav>
-    </header>
-  </div>
-
-<!--Page Bien être-->
-
-  <div id="bienEtre">
-
-    <header>
-      <nav class="titreFP">
-        <div class="logo">
-          <h1><a onclick="hide('acceuil')">FULL PATATE always</a></h1>
-        </div>
-
-        <div class="banniere">
-          <ul>
-            <li><a onclick ='hide("contacts")'>Contacts</a></li>
-            <li><a onclick='hide("bout_moi")'>MOI</a></li>
-          </ul>
-        </div>
-
-      </nav>
-    </header>
-
-
-  </div>
 
 
 
+    <!--Formulaire Calorie-->
+
+
+    <div id="bout_moi">
+
+
+      <header>
+        <nav class="titreFP">
+          <div class="logo">
+            <h1><a onclick="hide('acceuil')">FULL PATATE always</a></h1>
+          </div>
+
+          <div class="banniere">
+            <ul>
+              <li><a onclick ='hide("contacts")'>Contacts</a></li>
+              <li><a onclick='hide("bout_moi")'>MOI</a></li>
+            </ul>
+          </div>
+
+        </nav>
+      </header>
+
+      <div id="formulaire" class="formulaire">
+        <form class="moiForm" id "monCalor" name="form1" action="#" method="get">
+          <p> Vous voulez en savoir plus sur votre apport calorique ? </br>
+              Remplissez le formulaire ci-dessous:</p>
 
 
 
-  <footer>
-    <div class="basPage">
-      <a href="#">Politique d'utilisation des données</a>
+            <p>Votre prénom: </p>
+                <input type="text" name="prenom" id="prenom">
+
+            <p>Votre âge: </p>
+                <input type="number" name="age" id="age">
+
+            <p>Votre sexe: </p>
+                 <input type="radio" name="sexe" id="f" value="femme">
+                 <label for="femme">Femme</label>
+
+                  <input type="radio" name="sexe" id="m" value="homme">
+                  <label for="homme">Homme</label>
+
+            <p>Votre poids (kg): </p>
+                  <input type="number" name="poids" id="poids">
+
+            <p>Votre taille en cm: </p>
+                  <input type="number" name="taille" id="taille">
+
+            <p>Vous êtes plutôt; </p>
+               <select class="activite" id="activ" name="act">
+                    <option value="tresActif">Très actif</option>
+                    <option value="actif" selected>Actif</option>
+                    <option value="activitéMod">Activité modérée</option>
+                    <option value="pasActif">Pas actif</option>
+                </select><br>
+
+              <input type="button" class="SubForm" name="bouton" value="Soumettre" onclick="CalculCal(this);" >
+              <div id="erreur"></div>
+
+              <div id="VotreCal">
+
+
+              </div>
+
+
+      </div>
+
+
+
     </div>
-  </footer>
 
-</body>
+
+
+    <!--Contact-->
+
+
+    <div id="contacts">
+
+
+      <header>
+        <nav class="titreFP">
+          <div class="logo">
+            <h1><a onclick="hide('acceuil')">FULL PATATE always</a></h1>
+          </div>
+
+          <div class="banniere">
+            <ul>
+              <li><a onclick ='hide("contacts")'>Contacts</a></li>
+              <li><a onclick='hide("bout_moi")'>MOI</a></li>
+            </ul>
+          </div>
+
+        </nav>
+      </header>
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <!--Nutrition-->
+
+
+    <div id="nutrition">
+
+
+      <header>
+        <nav class="titreFP">
+          <div class="logo">
+            <h1><a onclick="hide('acceuil')">FULL PATATE always</a></h1>
+          </div>
+
+          <div class="banniere">
+            <ul>
+              <li><a onclick ='hide("contacts")'>Contacts</a></li>
+              <li><a onclick='hide("bout_moi")'>MOI</a></li>
+            </ul>
+          </div>
+
+        </nav>
+      </header>
+
+
+
+    </div>
+
+
+
+
+    <!-- Sport-->
+
+
+    <div id="sport">
+
+
+      <header>
+        <nav class="titreFP">
+          <div class="logo">
+            <h1><a onclick="hide('acceuil')">FULL PATATE always</a></h1>
+          </div>
+
+          <div class="banniere">
+            <ul>
+              <li><a onclick ='hide("contacts")'>Contacts</a></li>
+              <li><a onclick='hide("bout_moi")'>MOI</a></li>
+            </ul>
+          </div>
+
+        </nav>
+      </header>
+
+
+      <div class="ChoixSport">
+       <h5>Bonjour les courageux ! </h5>
+       <p>Ici vous allez retrouver votre bonheur adapté à vous!</br>
+         Le sport est avant tout un plaisir, un plaisir qui évolue ! </br>
+       </p>
+
+       <p> Pour augmenter ce plaisir nous allons transformer le sport en un jeu très amusant !</p>
+     </div>
+
+     <div class="sportChoice">
+
+       <fieldset class ="partie1">
+         <p>Choisissez votre niveau </p>
+
+         <select class="deroulant" name="deroul" id="liste">
+
+           <option value="deb">Debutant</option>
+           <option value="int">Intermediaire</option>
+           <option value="avanc">Avancé</option>
+
+         </select>
+
+         <input type="button" onclick="gym();" value="Choisir" class="choisir">
+
+        <input type="button" onclick="rand_om();" value="Pick Quick" class="hasard">
+
+
+       </fieldset>
+
+
+
+
+
+       <fieldset class="resultat">
+
+         <div id="afaire"></div>
+
+       </fieldset>
+
+
+
+
+     </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <!--Bien être-->
+
+
+    <div id="bienEtre">
+
+
+      <header>
+        <nav class="titreFP">
+          <div class="logo">
+            <h1><a onclick="hide('acceuil')">FULL PATATE always</a></h1>
+          </div>
+
+          <div class="banniere">
+            <ul>
+              <li><a onclick ='hide("contacts")'>Contacts</a></li>
+              <li><a onclick='hide("bout_moi")'>MOI</a></li>
+            </ul>
+          </div>
+
+        </nav>
+      </header>
+      <div class="articleBien">
+        <h1><strong>Le sport à jeun : bonne ou mauvaise idée ?</strong></h1>
+          <p>Lors d’une séance de vélo elliptique de 45 à 50 minutes à la salle de fitness, on brûle en</br>
+           moyenne 400 calories. Si l’on veut encore éliminer plus, est-ce une bonne idée de faire du sport</br>
+           à jeun ?</p>
+
+        <h2>Le sport, le matin à jeun, est-ce bon pour la santé, est-ce mieux pour perdre du poids?</h2>
+          <p>C’est une question que l’on se pose tous, alors j'ai fait des recherches et j'ai posé des questions
+             à des professionnels.</br>
+ 
+            D'après mes recherches, il n'y a pas de contre-indications pour faire du sport tôt le matin à jeun,</br>
+            tant que le sport reste light. En moyenne, on brûle dans ce cas 30% de graisse en plus que lors</br>
+         d'une séance en pleine journée. Mais selon Eve Tiollier, spécialisée en chronobiologie et nutrition</br>
+         à l'Institut national du sport, de l'expertise et de la performance (Insep), tout au long de la</br>
+         journée, il y aura alors un rééquilibrage naturel qui fait qu'au final on n'aura pas brûlé plus.</br></p>
+
+        <h3>Quelle est alors la meilleure heure pour faire du sport si on veut perdre du poids?</h3>
+          <p>Pour perdre du poids, et puiser dans les graisses installées, il faudrait faire sa séance de sport</br>
+             d'endurance (jogging, vélo, elliptique, natation...) entre 10h et 12h30. Le petit-déjeuner est alors</br>
+            déjà digéré depuis un certain temps, et le taux d'insuline dans notre corps est moins élevé, ce qui</br>
+             favorise l'élimination des graisses déjà bien installées. </br>
+            Dans un monde idéal, il faudrait faire du sport deux fois par jour, soit la séance d'endurance entre</br>
+           10h et 12h30, et l'après-midi une séance intensive, comme par exemple la boxe ou le travail avec</br>
+           un personal trainer. </br></p>
+
+           <a href="https://www.alexbalboa.com/">Source Alexandra Senioutovich</a>
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
