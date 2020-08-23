@@ -1,3 +1,6 @@
+"use strict !";
+
+
 function start(page){
   hide(page);
 }
@@ -11,6 +14,8 @@ function hide(page){
   document.getElementById('contacts').style.display="none";
   document.getElementById('acceuil').style.display="none";
   document.getElementById(page).style.display="inline";
+  
 
 
 }
+
