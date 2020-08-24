@@ -1,5 +1,18 @@
 "use strict !";
+
+
+
+/**
+ * Prendre en considération le type d'activité de la personne
+ *
+ * @param {number} x - total calorique sans l'activité
+ *
+ * @return {number} Renvoie le vrai total calorique en tenant compte de l'activité
+ */
+
+
 let tot;
+
 function activity(x){
   let act = document.getElementById("activ");
   let opt = act.options.selectedIndex;
