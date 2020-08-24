@@ -16,7 +16,7 @@ ul{
   content: 100%
   list-style-type: none;
   display: flex;
-  margin-left: 500px;
+
   padding: 10px;
 }
 
@@ -371,7 +371,7 @@ div.sportChoice{
   border-radius: 5%;
   background-color: white;
   opacity: 0.9;
-  height: 500px;
+  height: 300px;
   width: 800px;
   text-align: center;
   font-size: 30px;
@@ -405,6 +405,43 @@ select{
   color: #AA2507;
 }
 
+div.modifier{
+  position: relative;
+  left: 13%;
+  justify-content: center;
+  border: solid black;
+  border-radius: 5%;
+  background-color: white;
+  opacity: 0.9;
+  height: auto;
+  width: 800px;
+  text-align: center;
+  font-size: 30px;
+
+}
+
+.add{
+  width:85px;
+  height:85px;
+  background:#AA2507;
+  font:bold 13px monospace;
+  border-radius:50%;
+  border:none;
+  color:#fff;
+
+}
+
+.mine ul{
+  text-align: center;
+  position: relative;
+}
+
+
+
+
+/*-- Nutrition --*/
+
+
 
 div.articleBien{
   color: black;
@@ -412,7 +449,7 @@ div.articleBien{
   border-radius: 5%;
   background-color: white;
   opacity: 0.89;
-  height:500px;
+  height:600px;
   width: 800px;
   text-align: center;
   align-self: center;
@@ -422,6 +459,22 @@ div.articleBien{
   padding:10px;
 }
 
-.articleBien h1 h2 h3{
-  padding:15px;
+
+
+
+
+div.articlenutri{
+  color: black;
+  border: solid black;
+  border-radius: 5%;
+  background-color: white;
+  opacity: 0.89;
+  height:600px;
+  width: 800px;
+  text-align: center;
+  align-self: center;
+  position: relative;
+  left: 100px;
+  top: 20px;
+  padding:10px;
 }
