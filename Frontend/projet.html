@@ -291,7 +291,7 @@
      <div class="sportChoice">
 
        <fieldset class ="partie1">
-         <p>Choisissez votre niveau </p>
+         <p>Choisissez votre niveau ou laissez le hasard</p>
 
          <select class="deroulant" name="deroul" id="liste">
 
@@ -317,11 +317,40 @@
          <div id="afaire"></div>
 
        </fieldset>
-
-
-
-
      </div>
+
+
+     <div class="modifier">
+
+       <fieldset class="monProgra">
+
+         <form name="exos" id="ex">
+           <p> Choisi un sport ou des exercices: </p>
+           <input type="text" name="fitness" id="fit" placeholder="exercices">
+           <input type="text" name="rep"  id="repet" placeholder="nb de répétitions">
+           <p> Quel est le niveau de cet exercices ? </p>
+           <select id="monNiveau">
+             <option value='01'>Niveau 1</option>
+             <option value='02'>Niveau 2</option>
+             <option value='03'> Niveau 3</option>
+
+             <input type="button" onclick="ajouter();" value="Ajouter" class="add">
+
+         </form>
+
+         <div id="mine">
+           <p>Votre programme: </p>
+           <ul><li></li></ul>
+
+         </div>
+
+       </fieldset>
+    </div>
+
+
+
+
+
 
 
 
